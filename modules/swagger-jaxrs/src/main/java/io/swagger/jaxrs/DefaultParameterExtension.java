@@ -140,7 +140,7 @@ public class DefaultParameterExtension extends AbstractSwaggerExtension {
 
                 // Gather the field's details
                 if (field != null) {
-                    paramType = field.getType();
+                    paramType = field.getType(beanDesc.bindingsForBeanType());
 
                     for (final Annotation fieldAnnotation : field.annotations()) {
                         if (!paramAnnotations.contains(fieldAnnotation)) {
@@ -154,7 +154,7 @@ public class DefaultParameterExtension extends AbstractSwaggerExtension {
                     // Do not set the param class/type from the setter if the values are already identified
                     if (paramType == null) {
                     	// paramType will stay null if there is no parameter
-                        paramType = setter.getParameterType(0); 
+                        paramType = setter.getRawParameterTypes() != null ? setter.getRawParameterTypes()[0] : null;
                     }
 
                     for (final Annotation fieldAnnotation : setter.annotations()) {
@@ -168,7 +168,7 @@ public class DefaultParameterExtension extends AbstractSwaggerExtension {
                 if (getter != null) {
                     // Do not set the param class/type from the getter if the values are already identified
                     if (paramType == null) {
-                        paramType = getter.getType();
+                        paramType = getter.getType(beanDesc.bindingsForBeanType());
                     }
 
                     for (final Annotation fieldAnnotation : getter.annotations()) {

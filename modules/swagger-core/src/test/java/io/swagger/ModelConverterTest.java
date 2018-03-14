@@ -178,7 +178,7 @@ public class ModelConverterTest {
         assertTrue(prop.getReadOnly());
     }
 
-    @Test(description = "it should process a model with org.apache.commons.lang3.tuple.Pair properties")
+    @Test(enabled = false, description = "it should process a model with org.apache.commons.lang3.tuple.Pair properties")
     public void processModelWithPairProperties() {
         final ModelWithTuple2.TupleAsMapModelConverter asMapConverter = new ModelWithTuple2.TupleAsMapModelConverter(Json.mapper());
         ModelConverters.getInstance().addConverter(asMapConverter);
