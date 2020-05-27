@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-project</artifactId>
+        <version>1.5.18.fuse70-1</version>
+        <relativePath>../..</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>swagger-report</artifactId>
+    <packaging>pom</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.ops4j.tools.maven</groupId>
+                <artifactId>osgi-report-maven-plugin</artifactId>
+                <version>0.1.1</version>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>default-manifest-summary</id>
+                        <goals>
+                            <goal>manifest-summary</goal>
+                        </goals>
+                        <configuration>
+                            <separateReports>${project.build.directory}/reports</separateReports>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
