@@ -33,6 +33,14 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <version>${felix-version}</version>
                 <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Import-Package>
+                            com.fasterxml.jackson*;version="[2.8,3)",
+                            *
+                        </Import-Package>
+                    </instructions>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
