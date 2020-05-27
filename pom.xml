@@ -276,7 +276,7 @@
                 <plugin>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-maven-plugin</artifactId>
-                    <version>${jetty-version}</version>
+                    <version>${jetty-92-version}</version>
                     <dependencies>
                         <dependency>
                             <groupId>com.sun.jersey</groupId>
@@ -620,7 +620,8 @@
         <maven-plugin-version>1.0.0</maven-plugin-version>
         <commons-lang-version>3.2.1</commons-lang-version>
         <slf4j-version>1.7.22</slf4j-version>
-        <jetty-version>9.2.14.v20151106</jetty-version>
+        <jetty-92-version>9.2.14.v20151106</jetty-92-version>
+        <jetty-version>9.4.28.v20200408</jetty-version>
         <servlet-api-version>4.0.1</servlet-api-version>
         <coverage.complexity.minimum>0.90</coverage.complexity.minimum>
         <coverage.line.minimum>0.90</coverage.line.minimum>
