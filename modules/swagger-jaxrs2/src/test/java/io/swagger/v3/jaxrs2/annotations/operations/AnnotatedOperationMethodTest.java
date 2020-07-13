@@ -37,7 +37,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "      description: Defines a simple get operation with no inputs and a complex\n" +
                 "      operationId: getWithNoParameters\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: voila!\n" +
                 "      deprecated: true";
         String extractedYAML = openApiYAML.substring(start, end);
@@ -108,7 +108,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "      description: Defines a simple get operation with no inputs and a complex\n" +
                 "      operationId: getWithPayloadResponse\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: voila!\n" +
                 "          content:\n" +
                 "            application/json:\n" +
@@ -187,7 +187,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "      description: Defines a simple get operation with no inputs and a complex output\n" +
                 "      operationId: getWithPayloadResponse\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: voila!\n" +
                 "          content:\n" +
                 "            application/json:\n" +
@@ -197,7 +197,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "                basic:\n" +
                 "                  summary: shows a basic example\n" +
                 "                  description: basic\n" +
-                "                  value: \"{id: 19877734}\"\n" +
+                "                  value: '{id: 19877734}'\n" +
                 "      deprecated: true\n";
         assertEquals(extractedYAML, expectedYAML);
     }
@@ -219,7 +219,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "        example:\n" +
                 "          id: 19877734\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: voila!\n" +
                 "          content:\n" +
                 "            application/json:\n" +
@@ -229,7 +229,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "                basic:\n" +
                 "                  summary: shows a basic example\n" +
                 "                  description: basic\n" +
-                "                  value: \"{id: 19877734}\"\n" +
+                "                  value: '{id: 19877734}'\n" +
                 "      deprecated: true\n";
         assertEquals(extractedYAML, expectedYAML);
     }
@@ -323,7 +323,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "      description: Defines a simple get operation with no inputs and a complex output\n" +
                 "      operationId: getWithPayloadResponse\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: voila!\n" +
                 "          headers:\n" +
                 "            Rate-Limit-Limit:\n" +
@@ -370,7 +370,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "      description: Defines a simple get operation with no inputs and a complex output\n" +
                 "      operationId: getWithPayloadResponse\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: voila!\n" +
                 "          headers:\n" +
                 "            X-Rate-Limit-Desc:\n" +
@@ -800,7 +800,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "              $ref: '#/components/schemas/User'\n" +
                 "        required: true\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: user updated\n" +
                 "        \"400\":\n" +
                 "          description: Invalid user supplied\n" +
@@ -818,7 +818,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "        schema:\n" +
                 "          type: string\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: user deteled\n" +
                 "        \"400\":\n" +
                 "          description: Invalid username supplied\n" +
@@ -959,7 +959,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "              $ref: '#/components/schemas/User'\n" +
                 "        required: true\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: aaa\n" +
                 "          content:\n" +
                 "            application/json:\n" +
@@ -984,7 +984,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "              $ref: '#/components/schemas/User'\n" +
                 "        required: true\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: aaa\n" +
                 "components:\n" +
                 "  schemas:\n" +
@@ -1067,7 +1067,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "      description: Defines a simple get operation with no inputs and a complex\n" +
                 "      operationId: getWithNoParameters\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: voila!\n" +
                 "      security:\n" +
                 "      - petstore-auth:\n" +
@@ -1108,7 +1108,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "      description: Defines a simple get operation with no inputs and a complex\n" +
                 "      operationId: getWithNoParameters\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: voila!\n" +
                 "      security:\n" +
                 "      - petstore-auth:\n" +
@@ -1150,7 +1150,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "      description: Defines a simple get operation with no inputs and a complex\n" +
                 "      operationId: getWithNoParameters\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: voila!\n" +
                 "      security:\n" +
                 "      - review-auth:\n" +
@@ -1198,7 +1198,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "      description: Defines a deprecated get operation with no inputs and a complex\n" +
                 "      operationId: getWithNoParameters\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: voila!\n" +
                 "      deprecated: true";
         String extractedYAML = openApiYAML.substring(start, end);
@@ -1235,7 +1235,7 @@ public class AnnotatedOperationMethodTest extends AbstractAnnotationTest {
                 "      description: Defines a simple get operation in a deprecated class with no inputs\n" +
                 "      operationId: getWithNoParameters\n" +
                 "      responses:\n" +
-                "        \"200\":\n" +
+                "        200:\n" +
                 "          description: voila!\n" +
                 "      deprecated: true";
         String extractedYAML = openApiYAML.substring(start, end);

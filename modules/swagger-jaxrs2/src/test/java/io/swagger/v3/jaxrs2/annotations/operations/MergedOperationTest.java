@@ -92,7 +92,7 @@ public class MergedOperationTest extends AbstractAnnotationTest {
                 "      - name: id\n" +
                 "        in: query\n" +
                 "        schema:\n" +
-                "          pattern: \"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\"\n" +
+                "          pattern: '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'\n" +
                 "          type: string\n" +
                 "          description: a GUID for the user in uuid-v4 format\n" +
                 "          format: uuid\n" +
@@ -148,7 +148,7 @@ public class MergedOperationTest extends AbstractAnnotationTest {
                 "            schema:\n" +
                 "              $ref: '#/components/schemas/InputValue'\n" +
                 "      responses:\n" +
-                "        \"201\":\n" +
+                "        201:\n" +
                 "          description: value successfully processed\n" +
                 "components:\n" +
                 "  schemas:\n" +

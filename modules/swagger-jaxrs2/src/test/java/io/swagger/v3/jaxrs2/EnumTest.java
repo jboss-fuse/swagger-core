@@ -38,7 +38,7 @@ public class EnumTest {
             "          - A\n" +
             "          - B\n" +
             "      responses:\n" +
-            "        \"200\":\n" +
+            "        200:\n" +
             "          content:\n" +
             "            application/json:\n" +
             "              schema:\n" +
