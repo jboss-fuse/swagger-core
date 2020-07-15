@@ -611,7 +611,7 @@
         <logback-version>1.2.3</logback-version>
         <reflections-version>0.9.11</reflections-version>
         <guava-version>27.1-jre</guava-version>
-        <javassist-version>3.21.0-GA</javassist-version>
+        <javassist-version>3.24.1-GA</javassist-version>
 
         <testng-version>6.14.3</testng-version>
         <mockito-version>1.9.5</mockito-version>
