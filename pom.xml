@@ -618,7 +618,7 @@
         <rest-assured-version>2.8.0</rest-assured-version>
         <surefire-version>2.18.1</surefire-version>
         <maven-plugin-version>1.0.0</maven-plugin-version>
-        <commons-lang-version>3.10</commons-lang-version>
+        <commons-lang-version>3.12.0</commons-lang-version>
         <slf4j-version>1.7.22</slf4j-version>
         <jetty-92-version>9.2.14.v20151106</jetty-92-version>
         <jetty-version>9.4.30.v20200611</jetty-version>
@@ -626,7 +626,7 @@
         <coverage.complexity.minimum>0.90</coverage.complexity.minimum>
         <coverage.line.minimum>0.90</coverage.line.minimum>
         <coverage.missed.classes>0</coverage.missed.classes>
-        <commons-io-version>2.7</commons-io-version>
+        <commons-io-version>2.8.0</commons-io-version>
         <enforcer-plugin-version>1.4</enforcer-plugin-version>
         <failsafe-plugin-version>2.19.1</failsafe-plugin-version>
         <validation-api-version>2.0.1.Final-redhat-1</validation-api-version>
